@@ -144,7 +144,7 @@ async function LoadDataBase(naze, m) {
 			money: 0,
 			status: 0,
 			join: false,
-			public: true,
+			public: false,
 			anticall: true,
 			original: true,
 			readsw: false,
@@ -1004,3 +1004,4 @@ fs.watchFile(file, () => {
 	delete require.cache[file]
 	require(file)
 });
+
