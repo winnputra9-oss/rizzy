@@ -144,20 +144,20 @@ async function LoadDataBase(naze, m) {
 			money: 0,
 			status: 0,
 			join: false,
-			public: false,
+			public: true,
 			anticall: true,
 			original: true,
 			readsw: false,
 			autobio: false,
 			autoread: true,
 			antispam: false,
-			autotyping: true,
+			autotyping: false,
 			grouponly: true,
 			multiprefix: false,
 			privateonly: true,
-			author: global.author || 'Nazedev',
+			author: global.author || 'rizz ',
 			autobackup: false,
-			botname: global.botname || 'Hitori Bot',
+			botname: global.botname || 'fy rizz',
 			packname: global.packname || 'Bot WhatsApp',
 			template: 'documentMessage',
 			owner: global.owner.map(id => ({ id, lock: true })),
@@ -195,7 +195,7 @@ async function LoadDataBase(naze, m) {
 				warn: {},
 				tagsw: {},
 				nsfw: false,
-				mute: false,
+				mute: true,
 				leave: false,
 				setinfo: false,
 				antilink: false,
@@ -1004,4 +1004,5 @@ fs.watchFile(file, () => {
 	delete require.cache[file]
 	require(file)
 });
+
 
