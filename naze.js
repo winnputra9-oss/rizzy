@@ -3952,7 +3952,7 @@ module.exports = naze = async (naze, m, msg, store) => {
 ├ *Money* : ${db.users[m.sender] ? db.users[m.sender].money.toLocaleString('id-ID') : '0'}
 ╰─┬────❍
 ╭─┴─❍「 *BOT INFO* 」❍
-├ *Nama Bot* : ${db?.set?.[botNumber]?.botname || 'Naze Bot'}
+├ *Nama Bot* : ${db?.set?.[botNumber]?.botname || 'fy rizz'}
 ├ *Powered* : @${'0@s.whatsapp.net'.split('@')[0]}
 ├ *Owner* : @${ownerNumber[0].split('@')[0]}
 ├ *Mode* : ${naze.public ? 'Public' : 'Self'}
@@ -4588,3 +4588,4 @@ fs.watchFile(file, () => {
 	delete require.cache[file]
 	require(file)
 });
+
