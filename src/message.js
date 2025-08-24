@@ -152,9 +152,9 @@ async function LoadDataBase(naze, m) {
 			autoread: true,
 			antispam: false,
 			autotyping: false,
-			grouponly: true,
+			grouponly: false,
 			multiprefix: false,
-			privateonly: true,
+			privateonly: false,
 			author: global.author || 'rizz ',
 			autobackup: false,
 			botname: global.botname || 'fy rizz',
@@ -1004,5 +1004,6 @@ fs.watchFile(file, () => {
 	delete require.cache[file]
 	require(file)
 });
+
 
 
